@@ -1,0 +1,28 @@
+{
+    "name": "haddad/wp-laravel-auth",
+    "description": "using wordpress auth in the laravel to auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BlackSmith",
+            "email": "brahimhaddad.code@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "haddad\\wp-laravel-auth\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "hautelook/phpass": ">=0.3",
+        "laravel/framework": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "haddad\\WpLaravelAuth\\WordpressAuthServiceProvider"
+            ]
+        }
+    }
+}
